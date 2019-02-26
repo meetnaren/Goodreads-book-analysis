@@ -38,6 +38,7 @@ book_rows=[]
 save_every=10
 
 for i in range(len(book_data), len(books)):
+    time.sleep(60)
     try:
         book_URL=books.at[i, 'URL']
         book_page=get(book_URL)
